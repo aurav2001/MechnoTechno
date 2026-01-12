@@ -150,6 +150,46 @@ export const machines = [
             yarn_range: "Cotton, Synth, Wool"
         }
     },
-
-
+    {
+        id: 11,
+        name: "Auto-Packer 500",
+        description: "High-speed automated packaging solution for final product boxing.",
+        price: "$15,500",
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop",
+        features: ["50 boxes/min", "Auto-sealing", "Label applicator", "Compact footprint"],
+        specs: {
+            speed: "50 ppm",
+            box_size_max: "50x50x50 cm",
+            power: "220V",
+            air_consumption: "5 cfm"
+        }
+    },
+    {
+        id: 12,
+        name: "Vision Inspector Q1",
+        description: "AI-powered visual inspection system for quality control.",
+        price: "$22,000",
+        image: "https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=800&auto=format&fit=crop",
+        features: ["99.9% defect detection", "Real-time analytics", "Cloud integration", "Multi-camera support"],
+        specs: {
+            camera: "4K Global Shutter",
+            processing: "NVIDIA Jetson",
+            interface: "Ethernet/USB3",
+            lighting: "Adaptive LED"
+        }
+    },
+    {
+        id: 13,
+        name: "Industrial Furnace T-1000",
+        description: "Precision heat treatment for metallurgy applications.",
+        price: "$65,000",
+        image: "https://images.unsplash.com/photo-1565193566173-033d8db4a9b2?w=800&auto=format&fit=crop",
+        features: ["PID control", "Ceramic insulation", "Safety interlocks", "Data logging"],
+        specs: {
+            max_temp: "1200°C",
+            chamber_volume: "500 L",
+            heating_rate: "10°C/min",
+            power: "50 kW"
+        }
+    }
 ];

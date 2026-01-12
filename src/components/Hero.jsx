@@ -30,6 +30,12 @@ const Hero = () => {
         }
     ];
 
+    const stats = [
+        { label: "Years Experience", value: 15, suffix: "+" },
+        { label: "Projects Completed", value: 500, suffix: "+" },
+        { label: "Happy Clients", value: 100, suffix: "+" }
+    ];
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const prevSlide = () => {
@@ -109,7 +115,62 @@ const Hero = () => {
                     ></span>
                 ))}
             </div>
+
+            {/* Slide Counter */}
+            <div className="absolute bottom-12 right-8 md:right-16 z-20 hidden md:block">
+                <div className="text-white font-display border-l-2 border-primary pl-4">
+                    <span className="text-4xl font-bold block leading-none">
+                        {String(currentSlide + 1).padStart(2, '0')}
+                    </span>
+                    <span className="text-white/50 text-sm font-medium tracking-widest">
+                        / {String(slides.length).padStart(2, '0')}
+                    </span>
+                </div>
+            </div>
+
+            {/* Company Settings/Stats Overlay */}
+            <div className="absolute bottom-12 left-8 md:left-16 z-20 hidden md:flex gap-12">
+                {stats.map((stat, index) => (
+                    <div key={index} className="flex flex-col">
+                        <span className="text-3xl font-bold text-white font-display">
+                            <CountUp end={stat.value} suffix={stat.suffix} />
+                        </span>
+                        <span className="text-white/60 text-xs uppercase tracking-widest mt-1">{stat.label}</span>
+                    </div>
+                ))}
+            </div>
         </div>
+    );
+};
+
+// Helper Component for Counting Animation
+const CountUp = ({ end, duration = 2000, suffix = '' }) => {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        let startTime = null;
+        const animate = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const percentage = Math.min(progress / duration, 1);
+
+            // Ease out quart padding
+            const easeOutQuart = 1 - Math.pow(1 - percentage, 4);
+
+            setCount(Math.floor(easeOutQuart * end));
+
+            if (percentage < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+        requestAnimationFrame(animate);
+    }, [end, duration]);
+
+    return (
+        <span>
+            {count}
+            {suffix}
+        </span>
     );
 };
 

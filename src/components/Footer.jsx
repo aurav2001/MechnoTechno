@@ -32,10 +32,15 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <h4 className="text-white text-lg uppercase tracking-widest font-bold mb-6">Quick Links</h4>
                     <ul className="space-y-4">
-                        {['Home', 'Contact', 'Testimonials'].map(link => (
-                            <li key={link}>
-                                <a href={link === 'Home' ? '/' : `/${link.toLowerCase()}`} className="hover:text-primary transition-colors duration-300 flex items-center gap-2">
-                                    <span className="text-primary text-xs">›</span> {link}
+                        {[
+                            { name: 'Home', path: '/' },
+                            { name: 'Contact', path: '/contact' },
+                            { name: 'Testimonials', path: '/testimonials' },
+                            { name: 'Terms & Conditions', path: '/terms' }
+                        ].map((link) => (
+                            <li key={link.name}>
+                                <a href={link.path} className="hover:text-primary transition-colors duration-300 flex items-center gap-2">
+                                    <span className="text-primary text-xs">›</span> {link.name}
                                 </a>
                             </li>
                         ))}

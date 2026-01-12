@@ -18,18 +18,7 @@ const Navbar = () => {
     const menuItems = [
         { title: 'Home', path: '/' },
         { title: 'Our Products', path: '/products' },
-        {
-            title: 'Company Projects',
-            submenu: [
-                { title: 'Industrial Automation', path: '/automation' },
-                { title: 'Robotics Solutions', path: '/robotics' },
-                { title: 'Warehouse Systems', path: '/warehouse' },
-                { title: 'CNC & Machining', path: '/cnc-machining' },
-                { title: 'Fabrication & Cutting', path: '/fabrication' },
-                { title: 'Special Purpose', path: '/special-purpose' },
-                { title: 'About Company', path: '/company' }
-            ]
-        },
+        { title: 'About Company', path: '/company' },
         { title: 'Contact', path: '/contact' }
     ];
 

@@ -14,6 +14,7 @@ import OurProducts from './pages/OurProducts';
 import CncMachining from './pages/CncMachining';
 import Fabrication from './pages/Fabrication';
 import SpecialPurpose from './pages/SpecialPurpose';
+import Terms from './pages/Terms';
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/special-purpose" element={<SpecialPurpose />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/testimonials" element={<Testimonials />} />
+                        <Route path="/terms" element={<Terms />} />
                         <Route path="/machine/:id" element={<MachineDetails />} />
                     </Routes>
                 </main>

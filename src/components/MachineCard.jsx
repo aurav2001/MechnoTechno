@@ -30,8 +30,7 @@ const MachineCard = ({ machine }) => {
                     {machine.description}
                 </p>
 
-                <div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-auto">
-                    <span className="text-sm font-bold text-primary uppercase tracking-widest">Contact Now</span>
+                <div className="flex items-center justify-end border-t border-gray-100 pt-6 mt-auto">
                     <Link
                         to={`/machine/${machine.id}`}
                         className="inline-flex items-center gap-2 text-gray-900 font-bold text-sm uppercase tracking-wider hover:text-primary transition-colors duration-300 group/link"
