@@ -151,18 +151,5 @@ export const machines = [
         }
     },
 
-     {
-        id: 9,
-        name: "Pneumatic Drill",
-        description: "Heavy duty drilling and fastening solutions.",
-        price: "$1,200",
-        image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
-        features: ["Ergonomic grip", "High torque", "Keyless chuck", "Variable throttle"],
-        specs: {
-            air_pressure: "6-8 bar",
-            torque: "25 Nm",
-            weight: "1.5 kg",
-            chuck_size: "13 mm"
-        }
-    },
+
 ];

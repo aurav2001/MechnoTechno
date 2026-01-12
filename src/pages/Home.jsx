@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import MachineCard from '../components/MachineCard';
 import { machines } from '../data/machines';
@@ -10,7 +11,7 @@ const Home = () => {
         <div className="bg-gray-50 min-h-screen">
             <Hero />
             {/* Light section with subtle gradient */}
-            <section className="relative py-32 px-4 bg-white">
+            <section className="relative pt-32 pb-8 px-4 bg-white">
                 {/* Gradient Overlay removed or adjusted for light mode */}
                 <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-transparent to-white/50"></div>
 
@@ -32,6 +33,16 @@ const Home = () => {
                     {machines.filter(m => m.featured).map((machine) => (
                         <MachineCard key={machine.id} machine={machine} />
                     ))}
+                </div>
+
+                <div className="text-center mt-16">
+                    <Link
+                        to="/products"
+                        className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-primary hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg group shadow-xl"
+                    >
+                        See All Machines
+                        <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">→</span>
+                    </Link>
                 </div>
             </section>
 
