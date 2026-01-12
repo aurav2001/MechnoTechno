@@ -54,7 +54,7 @@ const Home = () => {
                 href="https://wa.me/8826266711"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-4 right-28 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
+                className="fixed bottom-20 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
                 title="Chat on WhatsApp"
             >
                 <FaWhatsapp className="text-3xl" />
