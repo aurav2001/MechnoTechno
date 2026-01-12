@@ -117,25 +117,25 @@ const Hero = () => {
             </div>
 
             {/* Slide Counter */}
-            <div className="absolute bottom-12 right-8 md:right-16 z-20 hidden md:block">
+            <div className="absolute bottom-6 right-4 md:bottom-12 md:right-16 z-20 block">
                 <div className="text-white font-display border-l-2 border-primary pl-4">
-                    <span className="text-4xl font-bold block leading-none">
+                    <span className="text-2xl md:text-4xl font-bold block leading-none">
                         {String(currentSlide + 1).padStart(2, '0')}
                     </span>
-                    <span className="text-white/50 text-sm font-medium tracking-widest">
+                    <span className="text-white/50 text-xs md:text-sm font-medium tracking-widest">
                         / {String(slides.length).padStart(2, '0')}
                     </span>
                 </div>
             </div>
 
             {/* Company Settings/Stats Overlay */}
-            <div className="absolute bottom-12 left-8 md:left-16 z-20 hidden md:flex gap-12">
+            <div className="absolute bottom-24 left-4 md:bottom-12 md:left-16 z-20 flex gap-4 md:gap-12">
                 {stats.map((stat, index) => (
                     <div key={index} className="flex flex-col">
-                        <span className="text-3xl font-bold text-white font-display">
+                        <span className="text-xl md:text-3xl font-bold text-white font-display">
                             <CountUp end={stat.value} suffix={stat.suffix} />
                         </span>
-                        <span className="text-white/60 text-xs uppercase tracking-widest mt-1">{stat.label}</span>
+                        <span className="text-white/60 text-[10px] md:text-xs uppercase tracking-widest mt-1">{stat.label}</span>
                     </div>
                 ))}
             </div>
