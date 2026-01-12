@@ -24,7 +24,9 @@ const Navbar = () => {
                 { title: 'Industrial Automation', path: '/automation' },
                 { title: 'Robotics Solutions', path: '/robotics' },
                 { title: 'Warehouse Systems', path: '/warehouse' },
-                { title: 'All Projects', path: '/projects' },
+                { title: 'CNC & Machining', path: '/cnc-machining' },
+                { title: 'Fabrication & Cutting', path: '/fabrication' },
+                { title: 'Special Purpose', path: '/special-purpose' },
                 { title: 'About Company', path: '/company' }
             ]
         },

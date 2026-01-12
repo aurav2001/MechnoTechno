@@ -7,11 +7,13 @@ import Testimonials from './pages/Testimonials';
 import MachineDetails from './pages/MachineDetails';
 
 import Company from './pages/Company';
-import Projects from './pages/Projects';
 import Automation from './pages/Automation';
 import Robotics from './pages/Robotics';
 import Warehouse from './pages/Warehouse';
 import OurProducts from './pages/OurProducts';
+import CncMachining from './pages/CncMachining';
+import Fabrication from './pages/Fabrication';
+import SpecialPurpose from './pages/SpecialPurpose';
 
 function App() {
     return (
@@ -23,10 +25,12 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/products" element={<OurProducts />} />
                         <Route path="/company" element={<Company />} />
-                        <Route path="/projects" element={<Projects />} />
                         <Route path="/automation" element={<Automation />} />
                         <Route path="/robotics" element={<Robotics />} />
                         <Route path="/warehouse" element={<Warehouse />} />
+                        <Route path="/cnc-machining" element={<CncMachining />} />
+                        <Route path="/fabrication" element={<Fabrication />} />
+                        <Route path="/special-purpose" element={<SpecialPurpose />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/testimonials" element={<Testimonials />} />
                         <Route path="/machine/:id" element={<MachineDetails />} />
