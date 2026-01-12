@@ -11,6 +11,7 @@ import Projects from './pages/Projects';
 import Automation from './pages/Automation';
 import Robotics from './pages/Robotics';
 import Warehouse from './pages/Warehouse';
+import OurProducts from './pages/OurProducts';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <main className="flex-1">
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/products" element={<OurProducts />} />
                         <Route path="/company" element={<Company />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/automation" element={<Automation />} />

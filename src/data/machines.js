@@ -13,6 +13,7 @@ export const machines = [
         description: "High-pressure forming capability for automative parts.",
         price: "350 Rs.",
         image: mc1,
+        featured: true,
         features: ["50-ton pressure", "Automated feeding", "Safety sensors", "Digital control panel"],
         specs: {
             largest_size: "6720 x 4480 px (22.40 x 14.93 in.) - 300 dpi - RGB",
@@ -27,6 +28,7 @@ export const machines = [
         description: "Close-up detail of intricate engraved metal printing plates with ornate floral designs. These artistic creations are displayed in an industrial workshop setting, highlighting craftsmanship.",
         price: "25,500 Rs.",
         image: mc2,
+        featured: true,
         features: ["5-axis milling", "Coolant system", "High-speed spindle", "Tool changer (12 slots)"],
         specs: {
             largest_size: "6720 x 4480 px (22.40 x 14.93 in.) - 300 dpi - RGB",
@@ -41,6 +43,7 @@ export const machines = [
         description: "Automated assembly line unit for pick and place operations.",
         price: "$45,000",
         image: mc3,
+        featured: true,
         features: ["6 degrees of freedom", "Payload 20kg", "Teaching pendant", "Collision detection"],
         specs: {
             reach: "1.8 m",
@@ -145,6 +148,21 @@ export const machines = [
             speed: "1200 picks/min",
             power: "7.5 kW",
             yarn_range: "Cotton, Synth, Wool"
+        }
+    },
+
+     {
+        id: 9,
+        name: "Pneumatic Drill",
+        description: "Heavy duty drilling and fastening solutions.",
+        price: "$1,200",
+        image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
+        features: ["Ergonomic grip", "High torque", "Keyless chuck", "Variable throttle"],
+        specs: {
+            air_pressure: "6-8 bar",
+            torque: "25 Nm",
+            weight: "1.5 kg",
+            chuck_size: "13 mm"
         }
     },
 ];
