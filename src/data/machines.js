@@ -93,25 +93,29 @@ export const machines = [
     },
     {
         id: 4,
-        name: "Manual Hand Press Dona Plate Machine",
-        model: "PMDP-700",
-        description: "Manual hand press machine for making paper dona, plate and thali with die size 4 to 8 inch.",
+        name: "Fully Automatic Single Die High Speed Dona Plate Making Machine",
+        model: "PMDP-2000",
+        description: "High speed automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
         price: "Contact for Price",
-        image: mc4,
-        featured: false,
+        image: mc6,
+        featured: true,
         features: [
-            "Easy Manual Operation",
-            "LPG Gas / Electricity Operation",
-            "Compact & Portable Design",
-            "Low Maintenance Cost",
-            "Suitable for Small Scale Production"
+            "Many Types Of Moulds Can Be Changed",
+            "Channel Based Machine",
+            "Pulley 20 Inch 1-B And 20 Inch 2-B High Quality",
+            "This Is High Speed Crank Machine",
+            "Roller 15 Inch High Quality",
+            "This Machine Uses Many Types of Papers Such As Silver Colour And Mica Paper"
         ],
         specs: {
-            die_size: "4 to 8 Inch",
-            production: "1000 PCS/Hour (Depends on Product Size)",
+            die_size: "4 to 14 Inch",
+            production: "1300 to 2000 PCS/Hour (Depends on Product Size)",
             paper_material: "80 to 180 GSM",
-            weight: "80 KG (Approx)",
-            operation_type: "LPG Gas / Electricity"
+            weight: "250 KG (Approx)",
+            power: "1.5 KW",
+            power_source: "220V Single Phase",
+            motor: "0.5 HP",
+            power_consumption: "1.5 to 2 Units/Hr Approx"
         }
     },
     {
@@ -142,29 +146,25 @@ export const machines = [
     },
     {
         id: 6,
-        name: "Fully Automatic Single Die High Speed Dona Plate Making Machine",
-        model: "PMDP-2000",
-        description: "High speed automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
+        name: "Manual Hand Press Dona Plate Machine",
+        model: "PMDP-700",
+        description: "Manual hand press machine for making paper dona, plate and thali with die size 4 to 8 inch.",
         price: "Contact for Price",
-        image: mc6,
-        featured: true,
+        image: mc4,
+        featured: false,
         features: [
-            "Many Types Of Moulds Can Be Changed",
-            "Channel Based Machine",
-            "Pulley 20 Inch 1-B And 20 Inch 2-B High Quality",
-            "This Is High Speed Crank Machine",
-            "Roller 15 Inch High Quality",
-            "This Machine Uses Many Types of Papers Such As Silver Colour And Mica Paper"
+            "Easy Manual Operation",
+            "LPG Gas / Electricity Operation",
+            "Compact & Portable Design",
+            "Low Maintenance Cost",
+            "Suitable for Small Scale Production"
         ],
         specs: {
-            die_size: "4 to 14 Inch",
-            production: "1300 to 2000 PCS/Hour (Depends on Product Size)",
+            die_size: "4 to 8 Inch",
+            production: "1000 PCS/Hour (Depends on Product Size)",
             paper_material: "80 to 180 GSM",
-            weight: "250 KG (Approx)",
-            power: "1.5 KW",
-            power_source: "220V Single Phase",
-            motor: "0.5 HP",
-            power_consumption: "1.5 to 2 Units/Hr Approx"
+            weight: "80 KG (Approx)",
+            operation_type: "LPG Gas / Electricity"
         }
     },
     {

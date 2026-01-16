@@ -3,21 +3,21 @@ const testimonials = [
         id: 1,
         name: "Rajesh Kumar",
         role: "Production Head, Tata Motors",
-        text: "The precision and durability of MECHNOTECHNO machines are unmatched. We have seen a 40% increase in output since installation.",
+        text: "We're very familiar with this machine's assembly and performance. The machine runs smoothly, requires minimal maintenance, and has significantly improved productivity. We're great at doing our job. We're friends.",
         image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
         id: 2,
         name: "Sarah Jenkins",
         role: "Director, BuildRight Construction",
-        text: "Exceptional service and build quality. Their automated solutions significantly reduced our operational downtime.",
+        text: "The machine's quality and output are both excellent. Installation and training were also excellent. After purchasing it, our work has become faster and easier.",
         image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
         id: 3,
         name: "Amit Patel",
         role: "CEO, Patel Engineering",
-        text: "We needed a custom robotic welding station, and they delivered beyond expectations. Highly recommended for heavy industry needs.",
+        text: "This machine has proven to be a game-changer for our business. It's power-efficient and consistently delivers good results. Customer support is also very responsive.",
         image: "https://randomuser.me/api/portraits/men/85.jpg"
     }
 ];
