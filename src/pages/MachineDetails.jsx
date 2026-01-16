@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { machines } from '../data/machines';
 import { FaArrowLeft, FaCheckCircle, FaCogs, FaWhatsapp } from 'react-icons/fa';
@@ -6,6 +7,10 @@ import brochurePdf from '../assets/brochure.pdf';
 const MachineDetails = () => {
     const { id } = useParams();
     const machine = machines.find(m => m.id === parseInt(id));
+
+    // Get all images (main + gallery)
+    const allImages = machine ? [machine.image, ...(machine.gallery || [])] : [];
+    const [selectedImage, setSelectedImage] = useState(0);
 
     if (!machine) {
         return (
@@ -25,19 +30,45 @@ const MachineDetails = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Image Section */}
-                    <div className="space-y-8">
+                    <div className="space-y-4">
+                        {/* Main Image */}
                         <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-2xl relative group bg-white">
                             <img
-                                src={machine.image}
+                                src={allImages[selectedImage]}
                                 alt={machine.name}
-                                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-[650px] object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
+
+                        {/* Thumbnail Gallery */}
+                        {allImages.length > 1 && (
+                            <div className="flex gap-3 overflow-x-auto pb-2 mt-10">
+                                {allImages.map((img, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => setSelectedImage(idx)}
+                                        className={`flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-2 transition-all duration-300 ${selectedImage === idx
+                                            ? 'border-primary shadow-lg scale-105'
+                                            : 'border-gray-200 hover:border-gray-400'
+                                            }`}
+                                    >
+                                        <img
+                                            src={img}
+                                            alt={`${machine.name} view ${idx + 1}`}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     {/* Info Section */}
                     <div className="text-gray-900">
-                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 uppercase text-gray-900">{machine.name}</h1>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-2 uppercase text-gray-900">{machine.name}</h1>
+                        {machine.model && (
+                            <p className="text-lg text-primary font-semibold mb-4">MODEL: {machine.model}</p>
+                        )}
                         <div className="flex items-center gap-4 mb-8">
                             <span className="text-2xl text-primary font-bold">{machine.price}</span>
                             <span className="bg-gray-100 px-3 py-1 rounded text-sm text-gray-600 border border-gray-200">In Stock</span>
@@ -47,31 +78,51 @@ const MachineDetails = () => {
                             {machine.description}
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                            <div>
-                                <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900">
-                                    <FaCogs className="text-primary" /> Technical Specs
-                                </h3>
-                                <ul className="space-y-3">
-                                    {Object.entries(machine.specs).map(([key, value]) => (
-                                        <li key={key} className="flex justify-between border-b border-gray-200 pb-2">
-                                            <span className="text-gray-500 capitalize">{key.replace('_', ' ')}:</span>
-                                            <span className="font-semibold text-gray-800">{value}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                        {/* Technical Specs Section */}
+                        <div className="mb-10">
+                            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+                                <span className="w-10 h-10 bg-gradient-to-br from-primary to-teal-600 rounded-lg flex items-center justify-center">
+                                    <FaCogs className="text-white text-lg" />
+                                </span>
+                                Technical Specifications
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {Object.entries(machine.specs).map(([key, value], idx) => (
+                                    <div
+                                        key={key}
+                                        className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-4 border border-gray-200 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 group"
+                                    >
+                                        <p className="text-xs text-gray-500 uppercase tracking-wider mb-2 group-hover:text-primary transition-colors">
+                                            {key.replace(/_/g, ' ')}
+                                        </p>
+                                        <p className="text-sm font-bold text-gray-800 leading-tight">
+                                            {value}
+                                        </p>
+                                    </div>
+                                ))}
                             </div>
-                            <div>
-                                <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900">
-                                    <FaCheckCircle className="text-primary" /> Key Features
-                                </h3>
-                                <ul className="space-y-3">
-                                    {machine.features.map((feature, idx) => (
-                                        <li key={idx} className="flex items-start gap-3 text-gray-700">
-                                            <span className="text-primary mt-1">✓</span> {feature}
-                                        </li>
-                                    ))}
-                                </ul>
+                        </div>
+
+                        {/* Key Features Section */}
+                        <div className="mb-10">
+                            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+                                <span className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
+                                    <FaCheckCircle className="text-white text-lg" />
+                                </span>
+                                Special Features
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                {machine.features.map((feature, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-100 hover:border-green-200 hover:bg-green-50/50 transition-all duration-300 group"
+                                    >
+                                        <span className="w-6 h-6 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+                                            <span className="text-white text-xs font-bold">✓</span>
+                                        </span>
+                                        <span className="text-gray-700 font-medium">{feature}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
@@ -83,7 +134,7 @@ const MachineDetails = () => {
                                 className="px-8 py-4 bg-[#25D366] text-white font-bold uppercase tracking-widest rounded hover:bg-[#20bd5a] hover:scale-[1.02] transition-all duration-300 text-center shadow-lg hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] flex items-center gap-2"
                             >
                                 <FaWhatsapp className="text-xl" />
-                               SEND ENQUIRY
+                                SEND ENQUIRY
                             </a>
                         </div>
                     </div>

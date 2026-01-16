@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronDown, FaPhoneAlt } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,6 +64,19 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
+
+            {/* Contact Number Section */}
+            <div className="hidden md:flex items-center gap-4">
+                <a href="tel:+918826266711" className="flex items-center gap-3 group">
+                    <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                        <FaPhoneAlt className="text-lg" />
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-xs uppercase font-bold tracking-widest text-red-500 group-hover:text-red-700 transition-colors">Call Us</span>
+                        <span className="text-xl font-bold text-red-600 group-hover:text-red-800 transition-colors tracking-wide">+91 8826266711</span>
+                    </div>
+                </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button onClick={toggleMenu} className="md:hidden text-2xl text-gray-900 hover:text-primary transition-colors">

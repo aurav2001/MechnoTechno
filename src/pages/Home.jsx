@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 max-w-7xl mx-auto">
-                    {machines.filter(m => m.featured).map((machine) => (
+                    {machines.slice(0, 3).map((machine) => (
                         <MachineCard key={machine.id} machine={machine} />
                     ))}
                 </div>

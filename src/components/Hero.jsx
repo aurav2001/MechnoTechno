@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import mc1 from '../assets/mc1.jpg';
+import mc1 from '../assets/mc1.jpeg';
 
 const Hero = () => {
     const slides = [
