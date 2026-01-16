@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaArrowUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -39,9 +40,9 @@ const Footer = () => {
                             { name: 'Terms & Conditions', path: '/terms' }
                         ].map((link) => (
                             <li key={link.name}>
-                                <a href={link.path} className="hover:text-primary transition-colors duration-300 flex items-center gap-2">
+                                <Link to={link.path} className="hover:text-primary transition-colors duration-300 flex items-center gap-2">
                                     <span className="text-primary text-xs">›</span> {link.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
