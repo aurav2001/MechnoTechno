@@ -32,7 +32,7 @@ const Testimonials = () => {
             <div className="max-w-7xl mx-auto px-8 relative z-10">
                 <div className="text-center mb-20">
                     <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Client Success Stories</span>
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900">Trusted by Industry Leaders</h2>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900">Trusted by Pan India User</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
