@@ -3,21 +3,21 @@ const testimonials = [
         id: 1,
         name: "Rajesh Kumar",
         role: "Production Head, Tata Motors",
-        text: "We're very familiar with this machine's assembly and performance. The machine runs smoothly, requires minimal maintenance, and has significantly improved productivity. We're great at doing our job. We're friends.",
+        text: "यह मशीन हमारे business के लिए game-changer साबित हुई है। Power-efficient है और results consistently अच्छे मिल रहे हैं। Customer support भी काफी responsive है।",
         image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
         id: 2,
         name: "Sarah Jenkins",
         role: "Director, BuildRight Construction",
-        text: "The machine's quality and output are both excellent. Installation and training were also excellent. After purchasing it, our work has become faster and easier.",
+        text: "Machine की quality और output दोनों ही शानदार हैं। Installation और training भी बहुत अच्छे से दी गई। Purchase करने के बाद हमारा काम तेज़ और आसान हो गया है।",
         image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
         id: 3,
         name: "Amit Patel",
         role: "CEO, Patel Engineering",
-        text: "This machine has proven to be a game-changer for our business. It's power-efficient and consistently delivers good results. Customer support is also very responsive.",
+        text: "हमने यह मशीन खरीदी और इसके performance से बहुत संतुष्ट हैं। मशीन smooth चलती है, maintenance कम है और productivity पहले से काफी बढ़ गई है। अपना काम करने के लिए बहुत बढ़िया काम है हम संतुष्ट हैं",
         image: "https://randomuser.me/api/portraits/men/85.jpg"
     }
 ];

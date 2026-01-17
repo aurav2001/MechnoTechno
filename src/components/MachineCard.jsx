@@ -40,10 +40,10 @@ const MachineCard = ({ machine }) => {
                         href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold text-sm uppercase tracking-wider px-4 py-2 rounded-full transition-all duration-300"
+                        className="inline-flex items-center gap-1 text-green-600 hover:text-green-700 font-semibold text-xs uppercase tracking-wider transition-all duration-300"
                     >
                         <FaWhatsapp className="text-lg" />
-                        Inquire Now
+                        Enquire Now
                     </a>
                     <Link
                         to={`/machine/${machine.id}`}
