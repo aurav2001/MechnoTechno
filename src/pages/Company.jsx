@@ -12,8 +12,8 @@ const Company = () => {
                 />
                 <h1 className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-8">About MechnoTechno</h1>
                 <p className="text-xl text-gray-600 leading-relaxed mb-12">
-                    MechnoTechno is a global leader in industrial automation and heavy machinery solutions.
-                    Founded in 2026, we have empowered over 30+ factories to achieve peak efficiency through our state-of-the-art technology.
+                    We are a trusted paper plate machine manufacturer, delivering high-performance, durable, and cost-effective paper plate making machines along with a range of industrial and semi-automatic machines. Our machines are engineered with precision, strong build quality, low power consumption, and minimal maintenance, ensuring consistent output and long service life.
+                    Focused on innovation, quality manufacturing, and customer satisfaction, we support entrepreneurs and businesses with reliable machinery, competitive pricing, timely delivery, and after-sales support. Our machines are widely used across India for efficient, eco-friendly paper product manufacturing.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -22,12 +22,12 @@ const Company = () => {
                         <div className="text-gray-500 font-medium">Years Experience</div>
                     </div>
                     <div className="p-8 bg-white rounded-2xl shadow-md border border-gray-100">
-                        <div className="text-4xl font-bold text-primary mb-2">100+</div>
-                        <div className="text-gray-500 font-medium">Projects Delivered</div>
+                        <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                        <div className="text-gray-500 font-medium">Machines Delivered</div>
                     </div>
                     <div className="p-8 bg-white rounded-2xl shadow-md border border-gray-100">
                         <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-                        <div className="text-gray-500 font-medium">Global Support</div>
+                        <div className="text-gray-500 font-medium">Support</div>
                     </div>
                 </div>
             </div>
@@ -41,24 +41,32 @@ const Company = () => {
                             <span className="text-primary font-bold tracking-widest uppercase mb-4 block">Why Partner With Us?</span>
                             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Engineering Excellence</h2>
                             <p className="text-gray-400 text-lg leading-relaxed">
-                                We don't just supply hardware; we engineer comprehensive solutions that drive productivity and reduce operational costs.
+                                High-quality paper plate machines
+
+                                Strong build & reliable performance
+
+                                Affordable pricing
+
+                                Timely delivery
+
+                                Dedicated after-sales support
                             </p>
                         </div>
                         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
                                 <FaChartLine className="text-3xl text-primary mb-4" />
                                 <h3 className="text-xl font-bold mb-2">ROI Focused</h3>
-                                <p className="text-gray-400 text-sm">Solutions designed to pay for themselves through efficiency gains.</p>
+                                <p className="text-gray-400 text-sm"> Affordable pricing & Timely delivery</p>
                             </div>
                             <div className="p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
                                 <FaShieldAlt className="text-3xl text-primary mb-4" />
                                 <h3 className="text-xl font-bold mb-2">Robust Safety</h3>
-                                <p className="text-gray-400 text-sm">Compliance with SIL and ISO safety standards is built-in.</p>
+                                <p className="text-gray-400 text-sm">Strong build & reliable performance.</p>
                             </div>
                             <div className="p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
                                 <FaClock className="text-3xl text-primary mb-4" />
                                 <h3 className="text-xl font-bold mb-2">24/7 Support</h3>
-                                <p className="text-gray-400 text-sm">Round-the-clock technical assistance for minimum downtime.</p>
+                                <p className="text-gray-400 text-sm">Dedicated after-sales support.</p>
                             </div>
                             <div className="p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
                                 <FaCogs className="text-3xl text-primary mb-4" />
@@ -81,7 +89,7 @@ const Company = () => {
                         </div>
                         <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">Our Mission</h2>
                         <p className="text-gray-600 leading-relaxed text-lg">
-                            To revolutionize the manufacturing industry by making advanced robotics and automation accessible, reliable, and sustainable for businesses of all sizes.
+                            to revolutionize the paper plate machine industry by providing high-quality, durable, and reliable machines.
                         </p>
                     </div>
 
@@ -92,7 +100,7 @@ const Company = () => {
                         </div>
                         <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">Our Vision</h2>
                         <p className="text-gray-600 leading-relaxed text-lg">
-                            We believe in a future where machines and humans work in perfect harmony to build a better world, driving innovation through intelligent engineering.
+                            We aim to support business growth by delivering reliable machines, fair pricing, and honest service
                         </p>
                     </div>
                 </div>

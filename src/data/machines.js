@@ -78,17 +78,40 @@ export const machines = [
     {
         id: 3,
         name: "Single Die Hydraulic",
-        description: "Automated assembly line unit for pick and place operations.",
+        model: "PMDP-1700 Hydraulic",
+        description: "Multipurpose Use Making Dona, Thali, Diamond, Plate In This Machine.",
         price: "INR 45,000",
         image: mc3,
         gallery: [mg1, mg2, mg3],
         featured: true,
-        features: ["6 degrees of freedom", "Payload 20kg", "Teaching pendant", "Collision detection"],
+        features: [
+            "Many Types Of Moulds Can Be Changed",
+            "Multipurpose Use - Dona, Thali, Diamond, Plate",
+            "2Hp Induction Motor (SINGLE/THREE PHASE)",
+            "Oil Provided With This Machine",
+            "Oil Tank Capacity: 40 Litters",
+            "Warranty: Induction Motor 1 YEAR"
+        ],
+        freeAccessories: [
+            "Free Dies 7\" WRINKLE DIE",
+            "Die Connector – 4 Pcs",
+            "Heater Set Of Free Dies",
+            "TEFLON SHEET",
+            "Adjustable Wrench",
+            "Spanner Sets",
+            "Allen Key",
+            "Fix Spanner"
+        ],
         specs: {
-            reach: "1.8 m",
-            repeatability: "±0.05 mm",
-            weight: "350 kg",
-            ip_rating: "IP67"
+            die_size: "4 Inch to 15 Inch",
+            production: "1200-1700 Pcs/Hr (Depends on Paper Size and GSM)",
+            paper_material: "80 GSM to 500 GSM (SHEET form)",
+            power_source: "220V 50Hz / 440V 50Hz",
+            power_consumption: "1.5 Units/Hr",
+            motor: "2Hp Induction Motor (SINGLE/THREE PHASE)",
+            oil_tank_capacity: "40 Litters",
+            dimension: "24\"(L) x 17\"(W) x 43\"(H)",
+            weight: "200 kg"
         }
     },
     {
@@ -167,84 +190,9 @@ export const machines = [
             operation_type: "LPG Gas / Electricity"
         }
     },
+
     {
         id: 7,
-        name: "Fully Automatic Dona Plate Double Die Centralized Pulley Fully Channel Based Machine",
-        model: "PMDP-3500 (HD)",
-        description: "High speed double die automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
-        price: "Contact for Price",
-        image: mc8,
-        featured: true,
-        features: [
-            "Heating Controlling System Inbuilt",
-            "Separated Die System",
-            "Many Types Of Moulds Can Be Changed",
-            "Channel Based Machine",
-            "Pulley 20 Inch 1-B And 20 Inch 2-B",
-            "Roller 15 Inch High Quality",
-            "This Machine Uses Many Types Of Papers"
-        ],
-        specs: {
-            die_size: "4 to 14 Inch",
-            production: "2600 to 4200 PCS/Hour (Depends on Product Size)",
-            paper_material: "80 to 180 GSM",
-            weight: "450 KG (Approx)",
-            power: "2 KW",
-            power_source: "220V 50Hz",
-            motor: "0.5 HP - 1440 RPM (Single Phase)",
-            power_consumption: "2 to 2.5 Units/Hr Approx"
-        }
-    },
-    {
-        id: 8,
-        name: "Fully Automatic Dona Plate Double Die Motor Fully Channel Based Machine",
-        model: "PMDP-4000 (HD)",
-        description: "High speed double die automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
-        price: "Contact for Price",
-        image: mc9,
-        featured: true,
-        features: [
-            "Heating Controlling System Inbuilt",
-            "Separated Die System",
-            "Many Types Of Moulds Can Be Changed",
-            "Channel Based Machine",
-            "Pulley 20 Inch 1-B And 20 Inch 2-B",
-            "Roller 15 Inch High Quality",
-            "This Machine Uses Many Types Of Papers"
-        ],
-        specs: {
-            output: "500 kVA",
-            fuel: "Diesel",
-            tank_capacity: "1000 L",
-            noise_level: "75 dB @ 7m"
-        }
-    },
-    {
-        id: 9,
-        name: "Fully Automatic Dona Plate Double Die Motorized Fully Channel Based Machine",
-        model: "PMDP-5000 (HD)",
-        description: "High speed double die automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
-        price: "Contact for Price",
-        image: mc10,
-        featured: true,
-        features: [
-            "Heating Controlling System Inbuilt",
-            "Separated Die System",
-            "Many Types Of Moulds Can Be Changed",
-            "Channel Based Machine",
-            "Pulley 20 Inch 1-B And 20 Inch 2-B",
-            "Roller 15 Inch High Quality",
-            "This Machine Uses Many Types Of Papers"
-        ],
-        specs: {
-            air_pressure: "6-8 bar",
-            torque: "25 Nm",
-            weight: "1.5 kg",
-            chuck_size: "13 mm"
-        }
-    },
-    {
-        id: 10,
         name: "Textile Loom v5",
         description: "High speed fabric weaving for modern textiles.",
         price: "$42,000",
@@ -258,7 +206,7 @@ export const machines = [
         }
     },
     {
-        id: 11,
+        id: 8,
         name: "Auto-Packer 500",
         description: "High-speed automated packaging solution for final product boxing.",
         price: "$15,500",
@@ -272,7 +220,7 @@ export const machines = [
         }
     },
     {
-        id: 12,
+        id: 9,
         name: "Vision Inspector Q1",
         description: "AI-powered visual inspection system for quality control.",
         price: "$22,000",
@@ -286,7 +234,7 @@ export const machines = [
         }
     },
     {
-        id: 13,
+        id: 10,
         name: "Industrial Furnace T-1000",
         description: "Precision heat treatment for metallurgy applications.",
         price: "$65,000",

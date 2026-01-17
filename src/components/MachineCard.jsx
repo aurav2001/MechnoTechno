@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const MachineCard = ({ machine }) => {
+    const whatsappNumber = "918826266711";
+    const whatsappMessage = encodeURIComponent(`Hi, I'm interested in ${machine.name}. Please provide more details.`);
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
     return (
         <div className="bg-white rounded-3xl overflow-hidden relative flex flex-col transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] group border border-gray-100">
             <div className="h-72 overflow-hidden relative">
@@ -30,7 +35,16 @@ const MachineCard = ({ machine }) => {
                     {machine.description}
                 </p>
 
-                <div className="flex items-center justify-end border-t border-gray-100 pt-6 mt-auto">
+                <div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-auto">
+                    <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold text-sm uppercase tracking-wider px-4 py-2 rounded-full transition-all duration-300"
+                    >
+                        <FaWhatsapp className="text-lg" />
+                        Inquire Now
+                    </a>
                     <Link
                         to={`/machine/${machine.id}`}
                         className="inline-flex items-center gap-2 text-gray-900 font-bold text-sm uppercase tracking-wider hover:text-primary transition-colors duration-300 group/link"
@@ -45,3 +59,4 @@ const MachineCard = ({ machine }) => {
 };
 
 export default MachineCard;
+

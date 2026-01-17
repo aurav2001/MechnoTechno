@@ -12,7 +12,7 @@ const Footer = () => {
                 {/* Brand */}
                 <div className="flex flex-col col-span-1 md:col-span-1">
                     <h3 className="text-white text-2xl font-display font-bold mb-6 tracking-wider">MECHNO-TECHNO</h3>
-                    <p className="text-lg leading-relaxed mb-6">Leading provider of industrial machinery. Engineering excellence since 2026.</p>
+                    <p className="text-lg leading-relaxed mb-6">We provide advanced, durable machines designed to improve productivity and ensure long-term performance.</p>
                     <div className="flex gap-4">
                         <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all">
                             <FaFacebookF />
@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
 
             <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-                <p>&copy; 2026 MechnoTechno. All rights reserved.</p>
+                <p>&copy; 2011 MechnoTechno. All rights reserved.</p>
                 <div className="flex gap-6 mt-4 md:mt-0">
                     <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

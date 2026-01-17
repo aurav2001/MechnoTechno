@@ -32,8 +32,8 @@ const Hero = () => {
 
     const stats = [
         { label: "Years Experience", value: 15, suffix: "+" },
-        { label: "Projects Completed", value: 500, suffix: "+" },
-        { label: "Happy Clients", value: 100, suffix: "+" }
+        { label: "Machines Delivered", value: 500, suffix: "+" },
+        { label: "Happy Clients", value: 300, suffix: "+" }
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
