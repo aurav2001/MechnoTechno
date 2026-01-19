@@ -6,16 +6,16 @@ const testimonials = [
         name: "Rajesh Kumar",
         role: "Production Head, Tata Motors",
         text: "यह मशीन हमारे business के लिए game-changer साबित हुई है। Power-efficient है और results consistently अच्छे मिल रहे हैं। Customer support भी काफी responsive है।",
-        image: "https://randomuser.me/api/portraits/men/32.jpg",
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
         rating: 5,
         date: "2 months ago"
     },
     {
         id: 2,
-        name: "Sarah Jenkins",
+        name: "Priya Sharma",
         role: "Director, BuildRight Construction",
         text: "Machine की quality और output दोनों ही शानदार हैं। Installation और training भी बहुत अच्छे से दी गई। Purchase करने के बाद हमारा काम तेज़ और आसान हो गया है।",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
         rating: 5,
         date: "3 weeks ago"
     },
@@ -24,7 +24,7 @@ const testimonials = [
         name: "Amit Patel",
         role: "CEO, Patel Engineering",
         text: "हमने यह मशीन खरीदी और इसके performance से बहुत संतुष्ट हैं। मशीन smooth चलती है, maintenance कम है और productivity पहले से काफी बढ़ गई है। अपना काम करने के लिए बहुत बढ़िया काम है हम संतुष्ट हैं",
-        image: "https://randomuser.me/api/portraits/men/85.jpg",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
         rating: 5,
         date: "1 month ago"
     }
