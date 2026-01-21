@@ -17,6 +17,10 @@ import mc7 from '../assets/mc7.jpeg';
 import mg1 from '../assets/mg1.jpeg';
 import mg2 from '../assets/mg2.jpeg';
 import mg3 from '../assets/mg3.jpeg';
+import pl1 from '../assets/pl1.webp';
+import pl2 from '../assets/pl2.webp';
+import pl3 from '../assets/pl3.webp';
+import pl4 from '../assets/pl4.webp';
 
 
 export const machines = [
@@ -193,9 +197,9 @@ export const machines = [
 
     {
         id: 7,
-        name: "Textile Loom v5",
+        name: "Silver Paper Plate Raw Material",
         description: "High speed fabric weaving for modern textiles.",
-        price: "$42,000",
+        price: "Enquire Now",
         image: mc11,
         features: ["PE-coated", "Multiple Sizes", "Dona/Thali/Plate", "Made in India"],
         specs: {
@@ -205,32 +209,33 @@ export const machines = [
             Usage: "Paper Plate Making"
         }
     },
-    {
+     {
         id: 8,
-        name: "Auto-Packer 500",
-        description: "High-speed automated packaging solution for final product boxing.",
-        price: "$15,500",
-        image: mc12,
-        features: ["50 boxes/min", "Auto-sealing", "Label applicator", "Compact footprint"],
+        name: "Customized Paper Plate Raw Material (Printed)",
+        description: "Printed paper for Dona and plates Eco-friendly customized size and design heigh quility. Are Professional qurates finished raw materialsourced from reliable suppliers wendors to manufactures top notch Products",
+        price: "Enquire Now",
+        image: mc13,
+        features: ["PE-coated", "Multiple Sizes", "Dona/Thali/Plate", "Made in India"],
         specs: {
-            speed: "50 ppm",
-            box_size_max: "50x50x50 cm",
-            power: "220V",
-            air_consumption: "5 cfm"
+            GSM: "80-180",
+            packaging_Type: "Roll",
+            color: "Customized",
+            Usage: "Paper Plate Making"
         }
     },
     {
         id: 9,
-        name: "Vision Inspector Q1",
+        name: "Paper Plate Making Machine Die",
         description: "AI-powered visual inspection system for quality control.",
         price: "$22,000",
-        image: mc13,
-        features: ["99.9% defect detection", "Real-time analytics", "Cloud integration", "Multi-camera support"],
+        image: pl4,
+        gallery: [pl1, pl2, pl3, pl4],
+        features: ["Plain/Wrinkle/Diamond Cutting", "Capacity: 3000 Pcs/Hr", "Heavy Duty Dies", "Made in India"],
         specs: {
-            camera: "4K Global Shutter",
-            processing: "NVIDIA Jetson",
-            interface: "Ethernet/USB3",
-            lighting: "Adaptive LED"
+            Material: "Steel",
+            Size: "4Inch to 13 Inch",
+            For_Machine: "Crank/Hydraulic",
+            Usage: "Plate/Dona Making"
         }
     },
     // {

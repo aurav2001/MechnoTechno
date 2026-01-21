@@ -65,7 +65,7 @@ const MachineDetails = () => {
 
                     {/* Info Section */}
                     <div className="text-gray-900">
-                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-2 uppercase text-gray-900">{machine.name}</h1>
+                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-2 text-gray-900">{machine.name}</h1>
                         {machine.model && (
                             <p className="text-lg text-primary font-semibold mb-4">MODEL: {machine.model}</p>
                         )}
