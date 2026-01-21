@@ -141,55 +141,55 @@ export const machines = [
             power_consumption: "1.5 to 2 Units/Hr Approx"
         }
     },
-    {
-        id: 5,
-        name: "Full Automatic Single Die Angle Based Paper Plate Making Machine",
-        model: "PMDP-1000",
-        description: "Automatic angle based machine for making paper dona, plate and thali with die size 4 to 10 inch.",
-        price: "28,500 Rs.",
-        image: mc5,
-        featured: true,
-        features: [
-            "Angle Based Machine",
-            "Many Types Of Moulds Supported",
-            "Many Types Of Papers Can Be Used",
-            "Fully Automatic Operation",
-            "High Speed Production"
-        ],
-        specs: {
-            die_size: "4 to 10 Inch",
-            production: "1000 to 1200 PCS/Hour (Depends on Product Size)",
-            paper_material: "80 to 150 GSM",
-            weight: "180 KG (Approx)",
-            power: "1.5 KW",
-            power_source: "220V Single Phase",
-            motor: "0.5 HP",
-            power_consumption: "1.5 to 2 Units/Hr Approx"
-        }
-    },
-    {
-        id: 6,
-        name: "Manual Hand Press Dona Plate Machine",
-        model: "PMDP-700",
-        description: "Manual hand press machine for making paper dona, plate and thali with die size 4 to 8 inch.",
-        price: "Contact for Price",
-        image: mc4,
-        featured: false,
-        features: [
-            "Easy Manual Operation",
-            "LPG Gas / Electricity Operation",
-            "Compact & Portable Design",
-            "Low Maintenance Cost",
-            "Suitable for Small Scale Production"
-        ],
-        specs: {
-            die_size: "4 to 8 Inch",
-            production: "1000 PCS/Hour (Depends on Product Size)",
-            paper_material: "80 to 180 GSM",
-            weight: "80 KG (Approx)",
-            operation_type: "LPG Gas / Electricity"
-        }
-    },
+    // {
+    //     id: 5,
+    //     name: "Full Automatic Single Die Angle Based Paper Plate Making Machine",
+    //     model: "PMDP-1000",
+    //     description: "Automatic angle based machine for making paper dona, plate and thali with die size 4 to 10 inch.",
+    //     price: "28,500 Rs.",
+    //     image: mc5,
+    //     featured: true,
+    //     features: [
+    //         "Angle Based Machine",
+    //         "Many Types Of Moulds Supported",
+    //         "Many Types Of Papers Can Be Used",
+    //         "Fully Automatic Operation",
+    //         "High Speed Production"
+    //     ],
+    //     specs: {
+    //         die_size: "4 to 10 Inch",
+    //         production: "1000 to 1200 PCS/Hour (Depends on Product Size)",
+    //         paper_material: "80 to 150 GSM",
+    //         weight: "180 KG (Approx)",
+    //         power: "1.5 KW",
+    //         power_source: "220V Single Phase",
+    //         motor: "0.5 HP",
+    //         power_consumption: "1.5 to 2 Units/Hr Approx"
+    //     }
+    // },
+    // {
+    //     id: 6,
+    //     name: "Manual Hand Press Dona Plate Machine",
+    //     model: "PMDP-700",
+    //     description: "Manual hand press machine for making paper dona, plate and thali with die size 4 to 8 inch.",
+    //     price: "Contact for Price",
+    //     image: mc4,
+    //     featured: false,
+    //     features: [
+    //         "Easy Manual Operation",
+    //         "LPG Gas / Electricity Operation",
+    //         "Compact & Portable Design",
+    //         "Low Maintenance Cost",
+    //         "Suitable for Small Scale Production"
+    //     ],
+    //     specs: {
+    //         die_size: "4 to 8 Inch",
+    //         production: "1000 PCS/Hour (Depends on Product Size)",
+    //         paper_material: "80 to 180 GSM",
+    //         weight: "80 KG (Approx)",
+    //         operation_type: "LPG Gas / Electricity"
+    //     }
+    // },
 
     {
         id: 7,
@@ -197,12 +197,12 @@ export const machines = [
         description: "High speed fabric weaving for modern textiles.",
         price: "$42,000",
         image: mc11,
-        features: ["Jacquard ready", "Auto weft repair", "Touch screen interface", "Low vibration"],
+        features: ["PE-coated", "Multiple Sizes", "Dona/Thali/Plate", "Made in India"],
         specs: {
-            width: "360 cm",
-            speed: "1200 picks/min",
-            power: "7.5 kW",
-            yarn_range: "Cotton, Synth, Wool"
+            GSM: "80-180",
+            packaging_Type: "Roll",
+            color: "Silver/Golden",
+            Usage: "Paper Plate Making"
         }
     },
     {
@@ -233,18 +233,18 @@ export const machines = [
             lighting: "Adaptive LED"
         }
     },
-    {
-        id: 10,
-        name: "Industrial Furnace T-1000",
-        description: "Precision heat treatment for metallurgy applications.",
-        price: "$65,000",
-        image: mc14,
-        features: ["PID control", "Ceramic insulation", "Safety interlocks", "Data logging"],
-        specs: {
-            max_temp: "1200°C",
-            chamber_volume: "500 L",
-            heating_rate: "10°C/min",
-            power: "50 kW"
-        }
-    }
+    // {
+    //     id: 10,
+    //     name: "Industrial Furnace T-1000",
+    //     description: "Precision heat treatment for metallurgy applications.",
+    //     price: "$65,000",
+    //     image: mc14,
+    //     features: ["PID control", "Ceramic insulation", "Safety interlocks", "Data logging"],
+    //     specs: {
+    //         max_temp: "1200°C",
+    //         chamber_volume: "500 L",
+    //         heating_rate: "10°C/min",
+    //         power: "50 kW"
+    //     }
+    // }
 ];
