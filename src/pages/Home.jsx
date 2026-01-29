@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import MachineCard from '../components/MachineCard';
 import { machines } from '../data/machines';
@@ -9,6 +10,7 @@ const Home = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen">
+            <SEO title="Home - Machine Services" />
             <Hero />
             {/* Light section with subtle gradient */}
             <section className="relative pt-32 pb-8 px-4 bg-white">
@@ -51,7 +53,7 @@ const Home = () => {
 
             {/* WhatsApp Floating Button */}
             <a
-                href="https://wa.me/8826266711"
+                href="https://wa.me/+918130513030"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-20 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"

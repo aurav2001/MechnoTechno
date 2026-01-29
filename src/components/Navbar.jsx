@@ -73,7 +73,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col">
                         <span className="text-xs uppercase font-bold tracking-widest text-red-500 group-hover:text-red-700 transition-colors">Call Us</span>
-                        <span className="text-xl font-bold text-red-600 group-hover:text-red-800 transition-colors tracking-wide">+91 8826266711</span>
+                        <span className="text-xl font-bold text-red-600 group-hover:text-red-800 transition-colors tracking-wide">+91 8130513030</span>
                     </div>
                 </a>
             </div>

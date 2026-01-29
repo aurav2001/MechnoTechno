@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SEO from '../components/SEO';
 import { useParams, Link } from 'react-router-dom';
 import { machines } from '../data/machines';
 import { FaArrowLeft, FaCheckCircle, FaCogs, FaWhatsapp } from 'react-icons/fa';
@@ -23,6 +24,11 @@ const MachineDetails = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 pt-32 pb-20 px-8">
+            <SEO
+                title={machine.name}
+                description={machine.description}
+                image={machine.image}
+            />
             <div className="max-w-7xl mx-auto">
                 <Link to="/" className="inline-flex items-center text-gray-500 hover:text-primary mb-8 transition-colors">
                     <FaArrowLeft className="mr-2" /> Back to Machines
@@ -70,7 +76,18 @@ const MachineDetails = () => {
                             <p className="text-lg text-primary font-semibold mb-4">MODEL: {machine.model}</p>
                         )}
                         <div className="flex items-center gap-4 mb-8">
-                            <span className="text-2xl text-primary font-bold">{machine.price}</span>
+                            {machine.price === "Enquire Now" ? (
+                                <a
+                                    href={`https://wa.me/8826266711?text=Hi, I am interested in the ${machine.name}. Please send me the price and details.`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-6 py-3 bg-primary text-black font-bold uppercase tracking-wider rounded-lg hover:bg-primary/80 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,242,234,0.4)]"
+                                >
+                                    Enquire Now
+                                </a>
+                            ) : (
+                                <span className="text-2xl text-primary font-bold">{machine.price}</span>
+                            )}
                             <span className="bg-gray-100 px-3 py-1 rounded text-sm text-gray-600 border border-gray-200">In Stock</span>
                         </div>
 

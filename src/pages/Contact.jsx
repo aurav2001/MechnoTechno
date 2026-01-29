@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import SEO from '../components/SEO';
 import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
@@ -61,6 +62,7 @@ const Contact = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20 px-4 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200">
+            <SEO title="Contact Us - Machine Services" />
             <div className="bg-white p-12 md:p-16 rounded-3xl w-full max-w-2xl shadow-xl border border-gray-200 relative overflow-hidden">
 
                 {status === 'success' && (
@@ -97,7 +99,7 @@ const Contact = () => {
                                 name="phone"
                                 type="tel"
                                 onChange={handleChange}
-                                placeholder="+1 (555) 000-0000"
+                                placeholder="+91 8130513030"
                                 value={formData.phone}
                                 className="w-full p-4 bg-gray-50 border border-gray-200 text-gray-900 rounded-xl focus:outline-none focus:border-primary focus:bg-white focus:shadow-[0_0_15px_rgba(0,242,234,0.1)] transition-all duration-300 placeholder-gray-400"
                             />

@@ -51,9 +51,9 @@ const Footer = () => {
                 {/* Contact */}
                 <div className="flex flex-col">
                     <h4 className="text-white text-lg uppercase tracking-widest font-bold mb-6">Contact</h4>
-                    <p className="mb-2">Email: info@machinepro.com</p>
-                    <p className="mb-2">Phone: +91 8826266711</p>
-                    <p>Address: NOIDA SEC-63, Work Edge</p>
+                    <p className="mb-2">Email: info@mechnotechno.com</p>
+                    <p className="mb-2">Phone: +91 8130513030</p>
+                    <p>Address: NOIDA SEC-63, UP</p>
                 </div>
 
                 {/* Newsletter */}
