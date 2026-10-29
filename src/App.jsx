@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import CartDrawer from './components/CartDrawer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
@@ -23,6 +24,7 @@ function App() {
             <ScrollToTop />
             <div className="flex flex-col min-h-screen">
                 <Navbar />
+                <CartDrawer />
                 <main className="flex-1">
                     <Routes>
                         <Route path="/" element={<Home />} />

@@ -26,10 +26,15 @@ import pl4 from '../assets/pl4.webp';
 export const machines = [
     {
         id: 1,
-        name: "Single Die Crank",
+        name: "Single Die Crank Machine",
         model: "PMDP-2000 PAPERDONA",
         description: "Plate, Thali making machine with die size 4 to 14 inch.",
-        price: "Enquire Now",
+        price: "₹45,000",
+        priceVal: 45000,
+        category: "machines",
+        rating: 4.8,
+        reviewsCount: 42,
+        tag: "Bestseller",
         image: mc1,
         gallery: [mg1, mg2],
         featured: true,
@@ -54,10 +59,15 @@ export const machines = [
     },
     {
         id: 2,
-        name: "Double Die Crank",
+        name: "Double Die Crank Machine",
         model: "PAPERDONA, PLATE, THALI",
         description: "Double die plate and thali making machine with die size 4 to 14 inch.",
-        price: "Enquire Now",
+        price: "₹75,000",
+        priceVal: 75000,
+        category: "machines",
+        rating: 4.6,
+        reviewsCount: 28,
+        tag: "High Performance",
         image: mc2,
         gallery: [mg1, mg2],
         featured: true,
@@ -81,10 +91,15 @@ export const machines = [
     },
     {
         id: 3,
-        name: "Single Die Hydraulic",
+        name: "Single Die Hydraulic Machine",
         model: "PMDP-1700 Hydraulic",
         description: "Multipurpose Use Making Dona, Thali, Diamond, Plate In This Machine.",
-        price: "Enquire Now",
+        price: "₹1,20,000",
+        priceVal: 120000,
+        category: "machines",
+        rating: 4.9,
+        reviewsCount: 56,
+        tag: "Top Rated",
         image: mc3,
         gallery: [mg1, mg2, mg3],
         featured: true,
@@ -123,7 +138,12 @@ export const machines = [
         name: "Fully Automatic Single Die High Speed Dona Plate Making Machine",
         model: "PMDP-2000",
         description: "High speed automatic machine for making paper dona, plate and thali with die size 4 to 14 inch.",
-        price: "Contact for Price",
+        price: "₹65,000",
+        priceVal: 65000,
+        category: "machines",
+        rating: 4.7,
+        reviewsCount: 19,
+        tag: "Super Fast",
         image: mc6,
         featured: true,
         features: [
@@ -145,111 +165,62 @@ export const machines = [
             power_consumption: "1.5 to 2 Units/Hr Approx"
         }
     },
-    // {
-    //     id: 5,
-    //     name: "Full Automatic Single Die Angle Based Paper Plate Making Machine",
-    //     model: "PMDP-1000",
-    //     description: "Automatic angle based machine for making paper dona, plate and thali with die size 4 to 10 inch.",
-    //     price: "28,500 Rs.",
-    //     image: mc5,
-    //     featured: true,
-    //     features: [
-    //         "Angle Based Machine",
-    //         "Many Types Of Moulds Supported",
-    //         "Many Types Of Papers Can Be Used",
-    //         "Fully Automatic Operation",
-    //         "High Speed Production"
-    //     ],
-    //     specs: {
-    //         die_size: "4 to 10 Inch",
-    //         production: "1000 to 1200 PCS/Hour (Depends on Product Size)",
-    //         paper_material: "80 to 150 GSM",
-    //         weight: "180 KG (Approx)",
-    //         power: "1.5 KW",
-    //         power_source: "220V Single Phase",
-    //         motor: "0.5 HP",
-    //         power_consumption: "1.5 to 2 Units/Hr Approx"
-    //     }
-    // },
-    // {
-    //     id: 6,
-    //     name: "Manual Hand Press Dona Plate Machine",
-    //     model: "PMDP-700",
-    //     description: "Manual hand press machine for making paper dona, plate and thali with die size 4 to 8 inch.",
-    //     price: "Contact for Price",
-    //     image: mc4,
-    //     featured: false,
-    //     features: [
-    //         "Easy Manual Operation",
-    //         "LPG Gas / Electricity Operation",
-    //         "Compact & Portable Design",
-    //         "Low Maintenance Cost",
-    //         "Suitable for Small Scale Production"
-    //     ],
-    //     specs: {
-    //         die_size: "4 to 8 Inch",
-    //         production: "1000 PCS/Hour (Depends on Product Size)",
-    //         paper_material: "80 to 180 GSM",
-    //         weight: "80 KG (Approx)",
-    //         operation_type: "LPG Gas / Electricity"
-    //     }
-    // },
-
     {
         id: 7,
-        name: "Silver Paper Plate Raw Material",
-        description: "High speed fabric weaving for modern textiles.",
-        price: "Enquire Now",
+        name: "Silver Paper Plate Raw Material (Roll)",
+        description: "High quality PE-coated silver paper roll for paper plate and dona making machines.",
+        price: "₹75/kg",
+        priceVal: 75,
+        category: "raw-materials",
+        rating: 4.5,
+        reviewsCount: 128,
+        tag: "Bestseller",
         image: mc11,
-        features: ["PE-coated", "Multiple Sizes", "Dona/Thali/Plate", "Made in India"],
+        features: ["PE-coated", "Multiple Sizes Available", "Dona/Thali/Plate Suitable", "Made in India"],
         specs: {
-            GSM: "80-180",
-            packaging_Type: "Roll",
+            GSM: "80-180 GSM",
+            packaging_Type: "Roll form",
             color: "Silver/Golden",
             Usage: "Paper Plate Making"
         }
     },
-     {
+    {
         id: 8,
-        name: "Customized Paper Plate Raw Material (Printed)",
-        description: "Printed paper for Dona and plates Eco-friendly customized size and design heigh quility. Are Professional qurates finished raw materialsourced from reliable suppliers wendors to manufactures top notch Products",
-        price: "Enquire Now",
+        name: "Customized Printed Paper Plate Raw Material",
+        description: "Printed paper roll for Dona and plates. Eco-friendly customized size and design, high quality finish raw material.",
+        price: "₹90/kg",
+        priceVal: 90,
+        category: "raw-materials",
+        rating: 4.8,
+        reviewsCount: 94,
+        tag: "Custom Printing",
         image: mc13,
-        features: ["PE-coated", "Multiple Sizes", "Dona/Thali/Plate", "Made in India"],
+        features: ["PE-coated", "Multiple Sizes Available", "Custom Design Support", "High Grade Paper"],
         specs: {
-            GSM: "80-180",
-            packaging_Type: "Roll",
-            color: "Customized",
+            GSM: "80-180 GSM",
+            packaging_Type: "Roll form",
+            color: "Customized Prints",
             Usage: "Paper Plate Making"
         }
     },
     {
         id: 9,
         name: "Paper Plate Making Machine Die",
-        description: "AI-powered visual inspection system for quality control.",
-        price: "Enquire Now",
+        description: "Heavy duty steel dies for paper plate making. Plain, wrinkle, or diamond cutting patterns available.",
+        price: "₹8,500",
+        priceVal: 8500,
+        category: "dies",
+        rating: 4.9,
+        reviewsCount: 73,
+        tag: "Premium Quality",
         image: pl4,
         gallery: [pl1, pl2, pl3, pl4],
-        features: ["Plain/Wrinkle/Diamond Cutting", "Capacity: 3000 Pcs/Hr", "Heavy Duty Dies", "Made in India"],
+        features: ["Plain/Wrinkle/Diamond Pattern", "Capacity up to 3000 Pcs/Hr", "Heavy Duty Steel Construction", "Precision Engineering"],
         specs: {
-            Material: "Steel",
-            Size: "4Inch to 13 Inch",
+            Material: "Carbon Steel",
+            Size: "4 Inch to 13 Inch",
             For_Machine: "Crank/Hydraulic",
             Usage: "Plate/Dona Making"
         }
-    },
-    // {
-    //     id: 10,
-    //     name: "Industrial Furnace T-1000",
-    //     description: "Precision heat treatment for metallurgy applications.",
-    //     price: "$65,000",
-    //     image: mc14,
-    //     features: ["PID control", "Ceramic insulation", "Safety interlocks", "Data logging"],
-    //     specs: {
-    //         max_temp: "1200°C",
-    //         chamber_volume: "500 L",
-    //         heating_rate: "10°C/min",
-    //         power: "50 kW"
-    //     }
-    // }
+    }
 ];

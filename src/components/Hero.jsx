@@ -1,32 +1,34 @@
 import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import mc1 from '../assets/mc1.jpeg';
+import banner1 from '../assets/banner1.png';
+import banner2 from '../assets/banner2.png';
 
 const Hero = () => {
     const slides = [
         {
             id: 1,
-            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-            title: "Future of Manufacturing",
-            subtitle: "Experience the next generation of industrial automation."
+            image: banner1,
+            title: "High-Speed Dona Plate Machines",
+            subtitle: "Advanced automatic paper plate and dona making machines for maximum productivity."
         },
         {
             id: 2,
-            image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
-            title: "Precision Engineering",
-            subtitle: "Accuracy down to the nanometer."
+            image: banner2,
+            title: "Premium Dies & Raw Materials",
+            subtitle: "Heavy-duty steel dies and high-quality PE-coated paper rolls."
         },
         {
             id: 3,
-            image: "https://images.unsplash.com/photo-1537462713205-e512641bfb18?q=80&w=2070&auto=format&fit=crop",
-            title: "Global Systems",
-            subtitle: "Connecting your production line to the world."
+            image: mc1,
+            title: "Heavy-Duty Crank & Hydraulic Systems",
+            subtitle: "Power, control, and reliability for your manufacturing unit."
         },
         {
             id: 4,
-            image: mc1,
-            title: "Advanced Hydraulics",
-            subtitle: "Power and control for heavy industry."
+            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+            title: "Future of Manufacturing",
+            subtitle: "Experience the next generation of industrial automation."
         }
     ];
 

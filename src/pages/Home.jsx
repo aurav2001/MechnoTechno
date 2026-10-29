@@ -5,6 +5,7 @@ import MachineCard from '../components/MachineCard';
 import { machines } from '../data/machines';
 import { FaWhatsapp } from 'react-icons/fa';
 import Testimonials from './Testimonials';
+import FAQ from '../components/FAQ';
 
 const Home = () => {
 
@@ -50,6 +51,9 @@ const Home = () => {
 
             {/* Testimonials Section */}
             <Testimonials />
+
+            {/* FAQ Section */}
+            <FAQ />
 
             {/* WhatsApp Floating Button */}
             <a

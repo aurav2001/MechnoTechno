@@ -1,4 +1,29 @@
-node_modules
+# Dependencies
 node_modules/
-dist
-dist/   
+
+# Production build output
+dist/
+!dist/index.html
+
+# Local backup archives & logs
+Machine_site_backup.zip
+Machinemechotechno.zip
+dist (2).zip
+build_log.txt
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+   
